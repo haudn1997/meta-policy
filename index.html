@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <title>Facebook Terms and Policies</title>
@@ -14,13 +14,21 @@
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
-    <!-- Chuyển hướng người xem bằng JavaScript (Bot Facebook sẽ không bị chuyển hướng) -->
-    <script>
-        window.location.replace("https://www.facebook.com/share/p/19FXjcz7qd/");
-    </script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://haudn1997.github.io/meta-policy/meta_banner.jpg">
 </head>
-<body style="background:#f0f2f5; font-family:sans-serif; text-align:center; padding-top:60px;">
-    <p>Redirecting to Meta Business Help Center...</p>
+<body style="background:#f0f2f5; font-family:sans-serif; text-align:center; padding-top:80px;">
+    <div style="max-width:500px; margin:0 auto; background:white; padding:30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+        <h2 style="color:#1877f2;">Meta Business Help Center</h2>
+        <p>Đang chuyển hướng đến bài viết chính sách Facebook...</p>
+        <a id="btn" href="https://www.facebook.com/share/p/19FXjcz7qd/" style="display:inline-block; padding:12px 24px; background:#1877f2; color:white; text-decoration:none; border-radius:6px; font-weight:bold; margin-top:15px;">Bấm vào đây nếu không tự chuyển hướng</a>
+    </div>
+
+    <!-- Chuyển hướng sau 2 giây để Facebook kịp hoàn tất nạp thẻ ảnh -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.facebook.com/share/p/19FXjcz7qd/";
+        }, 2000);
+    </script>
 </body>
 </html>
